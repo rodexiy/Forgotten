@@ -1,9 +1,13 @@
 local RenderService = {}
 
-function RenderService.Render(Players)
+function RenderService.RenderForPlayers(Players)
     for i, Player in ipairs(Players) do
-        print("Rendered for ", Player.Name)
+        RenderService.Render(Player) 
     end
+end
+
+function RenderService.Render(Player) 
+    print("Rendered for ", Player.Name)
 end
 
 return RenderService
