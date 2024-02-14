@@ -10,4 +10,14 @@ function Math.Clamp(number, min, max)
     end
 end
 
+function Math.Pow(number, pow)
+    local total = number
+
+    for i = 0, pow, i do
+        total = total * pow
+    end
+
+    return total
+end
+
 return Math
