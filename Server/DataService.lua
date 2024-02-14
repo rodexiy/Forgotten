@@ -6,4 +6,8 @@ function DataService:LoadData(Player)
     return Data
 end
 
+function DataService:SaveData(Player) 
+    print("Data saved for player with id: ", Player.UserId)
+end
+
 return DataService
