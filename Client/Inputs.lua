@@ -15,7 +15,7 @@ end
 
 function Inputs.Init()
     UserInputService.InputBegan(Inputs.InputBegan)
-    UserInputService.InputEnded(Inputs.InputEnded)
+    UserInputService.InputBegan(Inputs.InputEnded)
 end
 
 return Inputs
