@@ -14,7 +14,7 @@ function Math.Pow(number, pow)
     local total = number
 
     for i = 0, pow, i do
-        total = total * pow
+        total = total * number
     end
 
     return total
